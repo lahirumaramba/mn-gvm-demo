@@ -1,0 +1,15 @@
+{
+  "resources":{
+    "includes":[
+      {"pattern":"\\Qcom/google/api/client/http/google-http-client.properties\\E"},
+      {"pattern":"admin_sdk\\.properties"},
+      {"pattern":"\\Qapplication.yml\\E"},
+      {"pattern":"\\Qapplication-qa.yml\\E"},
+      {"pattern":"\\Qapplication-prod.yml\\E"},
+      {"pattern":"\\Qlogback.xml\\E"},
+      {"pattern":"\\Qsimplelogger.properties\\E"},
+      {"pattern":"migrations/.*"}
+    ]
+  }
+}
+
