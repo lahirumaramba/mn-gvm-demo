@@ -10,6 +10,7 @@ object FirebaseManager {
         FirebaseApp.initializeApp(
             FirebaseOptions.builder()
                 .setCredentials(GoogleCredentials.getApplicationDefault())
+				.setProjectId('admin-sdk-8b7ba')
                 .build()
         )
     }
