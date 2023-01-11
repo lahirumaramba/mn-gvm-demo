@@ -27,7 +27,7 @@ dependencies {
     runtimeOnly("com.fasterxml.jackson.module:jackson-module-kotlin")
 
     implementation ("com.google.firebase:firebase-admin:9.1.0")
-
+    implementation("org.apache.commons:commons-lang3:3.0")
 }
 
 
