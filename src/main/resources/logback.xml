@@ -12,8 +12,14 @@
     <root level="debug">
         <appender-ref ref="STDOUT" />
     </root>
-    <logger name="io.micronaut.http.client" level="trace" />
+    <logger name="io.micronaut.http.client" level="TRACE"/>
 
-    <contextListener class="ch.qos.logback.classic.jul.LevelChangePropagator"/>
-    <logger name="com.google" level="DEBUG"/>
+    <contextListener class="ch.qos.logback.classic.jul.LevelChangePropagator">
+        <!-- reset all previous level configurations of all j.u.l. loggers -->
+        <resetJUL>true</resetJUL>
+    </contextListener>
+
+    <logger name="com.google" level="TRACE">
+        <appender-ref ref="CONSOLE"/>
+    </logger>
 </configuration>
